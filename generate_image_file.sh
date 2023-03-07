@@ -111,5 +111,4 @@ if test "$PARAM" == "keep"; then
 else
     $BB losetup -d "${LOOPDEV}"
 fi
-
 msg "Finished: ${OUTFILE} is ready."
