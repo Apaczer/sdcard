@@ -3,3 +3,4 @@
 # CONSOLE_VARIANT is also set
 #
 ./daemon >> "${LOGS}" 2>&1
+insmod "./miyoo_kbd.ko" miyoo_layout=2
