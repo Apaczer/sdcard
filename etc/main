@@ -133,7 +133,7 @@ do
     else
 
         cd "${HOME}"/gmenu2x;
-        ./gmenu2x >> "${LOGS}" 2>&1;
+        gdb -ex="set confirm off" -ex=run -ex="bt full" -ex=q ./gmenu2x > debug.txt ;
     fi
     clear
 done
